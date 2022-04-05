@@ -8,22 +8,30 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 body nav {
   border-bottom: 5px solid rgba(156, 225, 247, 0.3);
   background-color: rgba(210, 210, 255, 0.5);
 }
+
 body nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 body nav ul li {
   background-color: rgba(252, 243, 243, 0.3);
-  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px rgb(79, 116, 116), 0 0 5px rgb(5, 7, 7);
+  -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #4f7474, 0 0 5px #050707;
+          box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #4f7474, 0 0 5px #050707;
   list-style: none;
   width: 5%;
   height: 40px;
   margin: 10px;
-  font-family: "Advent Pro", sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   font-weight: bolder;
   font-size: 13px;
   letter-spacing: 1.5px;
@@ -33,14 +41,17 @@ body nav ul li {
   overflow: hidden;
   margin-left: 50px;
 }
+
 body nav ul li a {
   all: unset;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-decoration: none;
 }
+
 body nav ul .button:after {
   content: "";
   position: absolute;
@@ -49,37 +60,53 @@ body nav ul .button:after {
   width: 200%;
   height: 100%;
   opacity: 0;
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   background: rgba(255, 255, 255, 0.13);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.13)), color-stop(77%, rgba(221, 250, 188, 0.13)), color-stop(92%, rgba(234, 255, 201, 0.5)), to(rgba(255, 255, 255, 0.3)));
   background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(221, 250, 188, 0.13) 77%, rgba(234, 255, 201, 0.5) 92%, rgba(255, 255, 255, 0.3) 100%);
 }
+
 body nav ul .button:hover:after {
   opacity: 1;
   top: 0;
   left: 0;
-  transform: translateX(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
-  transition-duration: 2s, 0.5s;
-  transition-timing-function: ease-in-out;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-transition-duration: 2s, 0.5s;
+          transition-duration: 2s, 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
+
 body nav ul .button:active:after {
   opacity: 0;
 }
+
 body nav ul .button:active:after {
   opacity: 0;
 }
+
 body nav ul .home:hover {
   background-image: url("/img/photo-1578598459159-f6ae2f208ca9.jpeg");
 }
+
 body nav ul .events:hover {
   background-image: url("/img/photo-1576792265585-c9a7624630ca.jpeg");
 }
+
 body nav ul .residency2:hover {
   background-image: url("/img/photo-1570475501127-a9413237866c.jpeg");
 }
+
 body nav ul .contact:hover {
   background-image: url("/img/photo-1576180510889-d91ca5078e14.jpeg");
 }
+
 body main {
   background-color: rgba(156, 225, 247, 0.3);
   width: 50%;
@@ -87,28 +114,34 @@ body main {
   margin-left: 24%;
   border-bottom: 100px solid rgba(156, 225, 247, 0.1);
 }
+
 body main div {
   width: 75%;
   text-align: center;
   margin-left: 150px;
   padding-top: 100px;
 }
+
 body main div h1 {
-  font-family: "Advent Pro", sans-serif;
-  color: rgb(27, 110, 189);
+  font-family: 'Advent Pro', sans-serif;
+  color: #1b6ebd;
   text-transform: uppercase;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 80px rgb(79, 116, 116), 0 0 80px rgb(5, 7, 7), 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 80px #4f7474, 0 0 80px #050707, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
   font-size: 50px;
   letter-spacing: 15px;
   margin-bottom: 20px;
 }
+
 body main div p, body main div li {
-  font-family: "Advent Pro", sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   font-size: 20px;
   letter-spacing: 5px;
   font-weight: bold;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 body main div img {
   width: 70%;
   height: 20%;
@@ -117,10 +150,10 @@ body main div img {
   padding-bottom: 20px;
   margin-right: 5%;
 }
+
 body .footer {
   background-color: rgba(156, 225, 247, 0.712);
   text-align: center;
   padding: 0.5%;
 }
-
 /*# sourceMappingURL=about.css.map */

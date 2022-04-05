@@ -7,6 +7,8 @@ $neon: 0 0 5px #fff,
 0 0 100px #0ff,
 0 0 150px #0ff;
 
+$bg: rgba(0, 0, 0, 0.9);
+
 @mixin neumorphic {
  
   background-color: rgba(252, 243, 243, 0.3);
