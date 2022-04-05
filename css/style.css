@@ -13,17 +13,15 @@ body {
   background-repeat: no-repeat;
   background-size: 1880px;
 }
-
-a {
+body a {
   color: inherit;
   text-decoration: none;
 }
-
-.logo {
+body .logo {
   width: 100%;
   height: 50%;
 }
-.logo h1 {
+body .logo h1 {
   font-family: "Advent Pro", sans-serif;
   font-size: 120px;
   letter-spacing: 50px;
@@ -32,22 +30,20 @@ a {
   color: #fff;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 80px rgb(79, 116, 116), 0 0 80px rgb(5, 7, 7), 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
 }
-
-.info {
+body .info {
   font-family: "Courier New", Courier, monospace;
 }
-.info p {
+body .info p {
   width: 30%;
   margin-left: 33%;
   text-align: center;
   color: #fefeff;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 80px rgb(79, 116, 116), 0 0 80px rgb(5, 7, 7), 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
 }
-
-.multi-button {
+body .multi-button {
   display: flex;
 }
-.multi-button .button {
+body .multi-button .button {
   background-color: #deebfd;
   border: none;
   border-radius: 40px;
@@ -63,19 +59,19 @@ a {
   width: 130px;
   font-family: "Special Elite", cursive;
 }
-.multi-button .button li {
+body .multi-button .button li {
   position: relative;
   margin-top: 27%;
   margin-left: 22%;
   list-style: none;
 }
-.multi-button .button .residency2 {
+body .multi-button .button .residency2 {
   right: 7%;
 }
-.multi-button .button .about2 {
+body .multi-button .button .about2 {
   left: 5%;
 }
-.multi-button .button:after {
+body .multi-button .button:after {
   content: "";
   position: absolute;
   top: 0;
@@ -87,7 +83,7 @@ a {
   background: rgba(255, 255, 255, 0.13);
   background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(221, 250, 188, 0.13) 77%, rgba(234, 255, 201, 0.5) 92%, rgba(255, 255, 255, 0.3) 100%);
 }
-.multi-button .button:hover:after {
+body .multi-button .button:hover:after {
   opacity: 1;
   top: 0;
   left: 0;
@@ -96,22 +92,22 @@ a {
   transition-duration: 2s, 0.5s;
   transition-timing-function: ease-in-out;
 }
-.multi-button .button:active:after {
+body .multi-button .button:active:after {
   opacity: 0;
 }
-.multi-button .button:active:after {
+body .multi-button .button:active:after {
   opacity: 0;
 }
-.multi-button .about:hover {
+body .multi-button .about:hover {
   background-image: url("/img/photo-1578598459159-f6ae2f208ca9.jpeg");
 }
-.multi-button .events:hover {
+body .multi-button .events:hover {
   background-image: url("/img/photo-1576792265585-c9a7624630ca.jpeg");
 }
-.multi-button .residency:hover {
+body .multi-button .residency:hover {
   background-image: url("/img/photo-1570475501127-a9413237866c.jpeg");
 }
-.multi-button .contact:hover {
+body .multi-button .contact:hover {
   background-image: url("/img/photo-1576180510889-d91ca5078e14.jpeg");
 }
 

@@ -1,11 +1,43 @@
-@import 
+$neon: 0 0 5px #fff,
+0 0 10px #fff,
+0 0 20px #fff,
+0 0 80px rgb(79, 116, 116),
+0 0 80px rgb(5, 7, 7),
+0 0 90px #0ff,
+0 0 100px #0ff,
+0 0 150px #0ff;
 
-$neon-shadow: 
-  0 0 5px #fff,
-  0 0 10px #fff,
-  0 0 20px #fff,
-  0 0 40px #0ff,
-  0 0 80px #0ff,
-  0 0 90px #0ff,
-  0 0 100px #0ff,
-  0 0 150px #0ff;
+@mixin neumorphic {
+
+   background-color: rgba(216, 233, 240, 0.5);
+   border-radius: 40%;
+   background: linear-gradient(145deg, #f0f0f0, #abe7f6);
+   box-shadow:  10px 10px 22px #759e9e,
+               -10px -10px 22px #e9f7fa;
+  
+}
+
+@mixin button {
+
+  list-style: none;
+  width: 5%;
+  height: 70px;
+  margin: 10px;
+  font-family: 'Advent Pro', sans-serif;
+  font-weight:bolder;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  
+}
+
+
+@mixin text {
+  font-family: 'Advent Pro', sans-serif;
+            color: rgb(27, 110, 189);
+            text-transform: uppercase;
+            text-shadow: $neon;
+            font-size: 50px;
+            letter-spacing: 15px;
+            margin-bottom: 20px;
+}
+

@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("/img/photo-1564951434112-64d74cc2a2d7.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body nav {
+  border-bottom: 5px solid rgba(156, 225, 247, 0.712);
+  background-color: rgba(210, 210, 255, 0.7);
+}
+
+body nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body nav ul li {
+  background-color: rgba(216, 233, 240, 0.5);
+  border-radius: 40%;
+  background: linear-gradient(145deg, #f0f0f0, #abe7f6);
+  -webkit-box-shadow: 10px 10px 22px #759e9e, -10px -10px 22px #e9f7fa;
+          box-shadow: 10px 10px 22px #759e9e, -10px -10px 22px #e9f7fa;
+  list-style: none;
+  width: 5%;
+  height: 70px;
+  margin: 10px;
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: bolder;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  position: relative;
+  text-transform: uppercase;
+  overflow: hidden;
+  margin-left: 50px;
+}
+
+body nav ul li a {
+  all: unset;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+
+body nav ul .button {
+  background-color: violet;
+}
+
+body nav ul .button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  background: rgba(255, 255, 255, 0.13);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.13)), color-stop(77%, rgba(221, 250, 188, 0.13)), color-stop(92%, rgba(234, 255, 201, 0.5)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(221, 250, 188, 0.13) 77%, rgba(234, 255, 201, 0.5) 92%, rgba(255, 255, 255, 0.3) 100%);
+}
+
+body nav ul .button:hover:after {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-transition-duration: 2s, 0.5s;
+          transition-duration: 2s, 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+body nav ul .button:active:after {
+  opacity: 0;
+}
+
+body nav ul .button:active:after {
+  opacity: 0;
+}
+
+body nav ul .home:hover {
+  background-image: url("/img/photo-1578598459159-f6ae2f208ca9.jpeg");
+}
+
+body nav ul .events:hover {
+  background-image: url("/img/photo-1576792265585-c9a7624630ca.jpeg");
+}
+
+body nav ul .residency2:hover {
+  background-image: url("/img/photo-1570475501127-a9413237866c.jpeg");
+}
+
+body nav ul .contact:hover {
+  background-image: url("/img/photo-1576180510889-d91ca5078e14.jpeg");
+}
+
+body main {
+  background-color: rgba(156, 225, 247, 0.712);
+  width: 50%;
+  height: 250%;
+  margin-left: 24%;
+  border-bottom: 100px solid rgba(156, 225, 247, 0.1);
+}
+
+body main div {
+  width: 75%;
+  text-align: center;
+  margin-left: 150px;
+  padding-top: 100px;
+}
+
+body main div h1 {
+  font-family: 'Advent Pro', sans-serif;
+  color: #1b6ebd;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 80px #4f7474, 0 0 80px #050707, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+  font-size: 50px;
+  letter-spacing: 15px;
+  margin-bottom: 20px;
+}
+
+body main div p, body main div li {
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main div img {
+  width: 70%;
+  height: 20%;
+  opacity: 0.5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 5%;
+}
+
+body .footer {
+  background-color: rgba(156, 225, 247, 0.712);
+  text-align: center;
+  padding: 0.5%;
+}
+/*# sourceMappingURL=about.css.map */
