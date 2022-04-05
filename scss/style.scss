@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
 }
+
+$neon: 0 0 5px #fff,
+0 0 10px #fff,
+0 0 20px #fff,
+0 0 80px rgb(79, 116, 116),
+0 0 80px rgb(5, 7, 7),
+0 0 90px #0ff,
+0 0 100px #0ff,
+0 0 150px #0ff;
         
 body {
     background-color: #fbecff;
@@ -24,28 +33,35 @@ a {
     height: 50%;
     
 
-    h1 {
-        font-family: 'Hachi Maru Pop', cursive;
+    h1 { 
+        font-family: 'Advent Pro', sans-serif;
         font-size: 120px;
         letter-spacing: 50px;
         padding-top: 150px;
-        margin-left: 18%;
+        margin-left: 25%;
         color: #fff;
-        text-shadow: 0 0 5px #fff,
-                     0 0 10px #fff,
-                     0 0 20px #fff,
-                     0 0 40px #0ff,
-                     0 0 80px #0ff,
-                     0 0 90px #0ff,
-                     0 0 100px #0ff,
-                     0 0 150px #0ff;
+        text-shadow: $neon;
         
     }
+}
+
+.info {
+
+       font-family: 'Courier New', Courier, monospace;
+       p {
+         width: 30%;
+         margin-left: 33%;
+         text-align: center;
+         color: #fefeff;
+         text-shadow: $neon;
+       }
 }
   
 .multi-button{
 
-    button {
+        display: flex;
+
+    .button {
         background-color:#deebfd;
         border: none;
         border-radius: 40px;
@@ -53,7 +69,7 @@ a {
         color: #8d8ffc;
         font-weight: 700;
         height: 96px;
-        margin-bottom: 48px;
+        margin-bottom: 10px;
         margin-right: 48px;
         overflow: hidden;
         position: relative;
@@ -61,9 +77,24 @@ a {
         width: 130px;
         font-family: 'Special Elite', cursive;
 
+        li {
+          position: relative;
+          margin-top: 27%;
+          margin-left: 22%;
+          list-style: none;
+        }
+        
+        .residency2 {
+          right: 7%;
+        }
+
+        .about2 {
+          left: 5%;
+        }
+
     }
 
-        button:after {
+        .button:after {
             content: "";
             position: absolute;
             top: 0;
@@ -84,7 +115,7 @@ a {
             
           }
 
-          button:hover:after {
+          .button:hover:after {
             opacity: 1;
             top: 0;
             left: 0;
@@ -96,11 +127,11 @@ a {
           }
 
 
-          button:active:after {
+          .button:active:after {
             opacity: 0;
           }
 
-          button:active:after {
+          .button:active:after {
             opacity: 0;
           }
         
