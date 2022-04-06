@@ -8,22 +8,30 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 body nav {
   border-bottom: 5px solid rgba(156, 225, 247, 0.3);
   background-color: rgba(210, 210, 255, 0.5);
 }
+
 body nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 body nav ul li {
   background-color: rgba(252, 243, 243, 0.3);
-  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px rgb(79, 116, 116), 0 0 5px rgb(5, 7, 7);
+  -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #4f7474, 0 0 5px #050707;
+          box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #4f7474, 0 0 5px #050707;
   list-style: none;
   width: 5%;
   height: 40px;
   margin: 10px;
-  font-family: "Advent Pro", sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   font-weight: bolder;
   font-size: 13px;
   letter-spacing: 1.5px;
@@ -33,14 +41,17 @@ body nav ul li {
   overflow: hidden;
   margin-left: 50px;
 }
+
 body nav ul li a {
   all: unset;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-decoration: none;
 }
+
 body nav ul .button:after {
   content: "";
   position: absolute;
@@ -49,42 +60,61 @@ body nav ul .button:after {
   width: 200%;
   height: 50%;
   opacity: 0;
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   background: rgba(255, 255, 255, 0.13);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.13)), color-stop(77%, rgba(221, 250, 188, 0.13)), color-stop(92%, rgba(234, 255, 201, 0.5)), to(rgba(255, 255, 255, 0.3)));
   background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(221, 250, 188, 0.13) 77%, rgba(234, 255, 201, 0.5) 92%, rgba(255, 255, 255, 0.3) 100%);
 }
+
 body nav ul .button:hover:after {
   opacity: 1;
   top: 0;
   left: 0;
-  transform: translateX(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
-  transition-duration: 2s, 0.5s;
-  transition-timing-function: ease-in-out;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-transition-duration: 2s, 0.5s;
+          transition-duration: 2s, 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
+
 body nav ul .button:active:after {
   opacity: 0;
 }
+
 body nav ul .button:active:after {
   opacity: 0;
 }
+
 body nav ul .home:hover {
   background-image: url("/img/photo-1578598459159-f6ae2f208ca9.jpeg");
 }
+
 body nav ul .events:hover {
   background-image: url("/img/photo-1576792265585-c9a7624630ca.jpeg");
 }
+
 body nav ul .residency2:hover {
   background-image: url("/img/photo-1570475501127-a9413237866c.jpeg");
 }
+
 body nav ul .contact:hover {
   background-image: url("/img/photo-1576180510889-d91ca5078e14.jpeg");
 }
+
 body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 10%;
   margin-bottom: 10%;
 }
+
 body main .container {
   width: 300px;
   height: 400px;
@@ -101,28 +131,38 @@ body main .container {
   -webkit-box-shadow: 0 0 5px #000;
   box-shadow: 0 0 5px #000;
 }
+
 body main .overlay {
   width: 100%;
   height: 100%;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 2fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 2fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 2fr 1fr;
   background: rgba(252, 195, 252, 0.7);
   color: rgba(0, 0, 0, 0.9);
   opacity: 0;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
 }
+
 body main .items {
   padding-left: 20px;
   letter-spacing: 3px;
 }
+
 body main .head {
   font-size: 30px;
   line-height: 40px;
-  transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
+
 body main .head hr {
   display: block;
   width: 0;
@@ -131,81 +171,109 @@ body main .head hr {
   position: absolute;
   bottom: 0;
   left: 20px;
-  transition: all 0.5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
+
 body main .price {
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
   opacity: 0;
-  transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
+
 body main .price .old {
   padding: 10px;
   color: white;
 }
+
 body main .cart {
   font-size: 12px;
   opacity: 0;
   letter-spacing: 1px;
-  font-family: "Lato", sans-serif;
-  transform: translateY(40px);
+  font-family: 'Lato', sans-serif;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
+
 body main .cart i {
   font-size: 16px;
 }
+
 body main .cart span {
   list-style: none;
   width: 5%;
   height: 40px;
   margin: 10px;
-  font-family: "Advent Pro", sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   font-weight: bolder;
   font-size: 13px;
   letter-spacing: 1.5px;
   border-radius: 10%;
   background-color: rgba(252, 243, 243, 0.3);
-  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px rgb(79, 116, 116), 0 0 5px rgb(5, 7, 7);
+  -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #4f7474, 0 0 5px #050707;
+          box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #4f7474, 0 0 5px #050707;
   padding: 5px;
   margin-left: 80px;
 }
+
 body main .container:hover .overlay {
   opacity: 1;
 }
+
 body main .container:hover .overlay .head {
-  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
+
 body main .container:hover .overlay hr {
   width: 75px;
-  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
+
 body main .container:hover .overlay .price {
-  transform: translateY(0px);
-  transition-delay: 0.3s;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
   opacity: 1;
 }
+
 body main .container:hover .overlay .cart {
-  transform: translateY(0px);
-  transition-delay: 0.6s;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
   opacity: 1;
 }
+
 body main .one {
   background-image: url("/img/residency1.jpeg");
 }
+
 body main .two {
   background-image: url("/img/residency6.jpeg");
 }
+
 body main .three {
   background-image: url("/img/residency3.jpeg");
 }
+
 body main .four {
   background-image: url("/img/residency5.jpeg");
 }
+
 body main .five {
   background-image: url("/img/residency4.jpeg");
 }
+
 body footer {
   background-color: rgba(156, 225, 247, 0.712);
   text-align: center;
@@ -222,8 +290,13 @@ body footer {
     margin: 10px;
   }
   body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body main .container {
     width: 150px;
@@ -233,6 +306,7 @@ body footer {
     margin-top: 0px;
   }
 }
+
 /* for smaller tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   body {
@@ -244,8 +318,13 @@ body footer {
     margin: 10px;
   }
   body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body main .container {
     width: 150px;
@@ -255,6 +334,7 @@ body footer {
     margin-top: 0px;
   }
 }
+
 /* for large tablets */
 @media only screen and (min-width: 769px) and (max-width: 990px) {
   body {
@@ -266,8 +346,13 @@ body footer {
     margin: 10px;
   }
   body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body main .container {
     width: 150px;
@@ -277,6 +362,7 @@ body footer {
     margin-top: 0px;
   }
 }
+
 /* for laptops */
 @media only screen and (min-width: 991px) and (max-width: 1366px) {
   body {
@@ -295,6 +381,7 @@ body footer {
     margin-top: 45%;
   }
 }
+
 /* for desktops */
 @media only screen and (min-width: 1367px) {
   body {
@@ -305,5 +392,4 @@ body footer {
     margin: 10px;
   }
 }
-
 /*# sourceMappingURL=residency.css.map */
