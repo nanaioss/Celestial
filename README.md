@@ -14,6 +14,4 @@ HTML
 /
 CSS
 /
-BOOTSTRAP 
-/
 SASS

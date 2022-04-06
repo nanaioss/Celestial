@@ -189,3 +189,88 @@ body {
     
     }
 }
+
+@media only screen 
+  and (max-width: 580px) { 
+
+  body {
+
+      width: 375px;
+      background-image: none;
+      width: 100%;
+
+        .button {
+            width: 80px;
+            font-size: 10px;
+            margin: 10px;
+        }
+
+      main {
+        .container {
+          width: 100vw;
+
+          .card {
+            height: 250px;
+           .image {
+
+            width: 250px;
+              
+            h1 {
+              font-size: 30px;
+            }
+           
+
+            img {
+              width: 250px;
+            }
+           }
+          }
+        }
+      }
+      
+    }
+   
+} 
+
+
+@media only screen 
+  and (max-width: 768px) { 
+
+  body {
+
+      width: 375px;
+      width: 100%;
+
+        .button {
+            width: 80px;
+            font-size: 10px;
+            margin: 10px;
+        }
+
+      main {
+        .container {
+          width: 50vw;
+
+          .card {
+            height: 250px;
+           .image {
+
+            width: 250px;
+              
+            h1 {
+              font-size: 30px;
+            }
+           
+
+            img {
+              width: 250px;
+            }
+           }
+          }
+        }
+      }
+      
+    }
+   
+} 
+

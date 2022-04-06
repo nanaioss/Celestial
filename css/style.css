@@ -111,4 +111,93 @@ body .multi-button .contact:hover {
   background-image: url("/img/photo-1576180510889-d91ca5078e14.jpeg");
 }
 
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .logo {
+    height: 30%;
+    left: 20%;
+  }
+  body .logo h1 {
+    font-size: 30px;
+    margin: 0;
+    letter-spacing: 13px;
+    font-weight: bolder;
+    padding: 100px;
+  }
+  body .info {
+    width: 100%;
+  }
+  body .info p {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    padding-bottom: 50px;
+  }
+  body .multi-button {
+    display: flex;
+  }
+  body .multi-button .button {
+    font-size: 10px;
+    width: 80px;
+    height: 50px;
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .logo {
+    height: 30%;
+    left: 20%;
+  }
+  body .logo h1 {
+    font-size: 30px;
+    margin: 0;
+    letter-spacing: 13px;
+    font-weight: bolder;
+    padding-left: 270px;
+    padding-bottom: 0;
+    padding-top: 200px;
+  }
+  body .info {
+    width: 100%;
+  }
+  body .info p {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    padding: 100px;
+  }
+  body .multi-button {
+    display: flex;
+  }
+  body .multi-button .button {
+    font-size: 10px;
+    width: 80px;
+    height: 50px;
+    margin: 5px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

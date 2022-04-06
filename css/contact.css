@@ -1,10 +1,10 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 body {
-  background-image: url("/img/photo-1564951434112-64d74cc2a2d7.jpeg");
+  background-image: url("/img/photo-1576792265585-c9a7624630ca.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -47,7 +47,7 @@ body nav ul .button:after {
   top: 0;
   left: 0;
   width: 200%;
-  height: 100%;
+  height: 50%;
   opacity: 0;
   transform: translateX(-100%);
   background: rgba(255, 255, 255, 0.13);
@@ -80,105 +80,138 @@ body nav ul .residency2:hover {
 body nav ul .contact:hover {
   background-image: url("/img/photo-1576180510889-d91ca5078e14.jpeg");
 }
-body main {
-  background-color: rgba(156, 225, 247, 0.3);
-  width: 50%;
-  height: 250%;
-  margin-left: 24%;
-  border-bottom: 100px solid rgba(156, 225, 247, 0.1);
+body body, body html {
+  background-color: #EBECF0;
 }
-body main div {
-  width: 75%;
+body body, body p, body input, body select, body textarea, body button {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+}
+body div, body p {
+  color: #BABECC;
+  text-shadow: 1px 1px 1px #FFF;
+}
+body form {
+  padding: 16px;
+  width: 320px;
+  margin: 0 auto;
+}
+body .segment {
+  padding: 32px 0;
   text-align: center;
-  margin-left: 150px;
-  padding-top: 100px;
+  color: rgba(91, 148, 196, 0.712);
 }
-body main div h1 {
+body h1 {
   font-family: "Advent Pro", sans-serif;
-  color: rgb(27, 110, 189);
-  text-transform: uppercase;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 80px rgb(79, 116, 116), 0 0 80px rgb(5, 7, 7), 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
-  font-size: 50px;
-  letter-spacing: 15px;
-  margin-bottom: 20px;
-}
-body main div p, body main div li {
-  font-family: "Advent Pro", sans-serif;
-  font-size: 20px;
-  letter-spacing: 5px;
   font-weight: bold;
+}
+body button, body input {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: #EBECF0;
+  text-shadow: 1px 1px 0 #FFF;
+}
+body label {
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+}
+body input {
+  margin-right: 8px;
+  box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+body input:focus {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+body button {
+  color: #61677C;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+body button:hover {
+  box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+}
+body button:active {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+body button .icon {
+  margin-right: 8px;
+}
+body button.unit {
+  border-radius: 8px;
+  line-height: 0;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
   justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  font-size: 19.2px;
 }
-body main div img {
-  width: 70%;
-  height: 20%;
-  opacity: 0.5;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-right: 5%;
+body button.unit .icon {
+  margin-right: 0;
 }
-body .footer {
+body button.red {
+  display: block;
+  width: 100%;
+  color: rgba(91, 148, 196, 0.712);
+}
+body .input-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+body .input-group label {
+  margin: 0;
+  flex: 1;
+}
+body footer {
   background-color: rgba(156, 225, 247, 0.712);
   text-align: center;
   padding: 0.5%;
+  margin-top: 320px;
 }
 
 @media only screen and (max-width: 480px) {
   body {
-    width: 120%;
+    width: 100%;
   }
   body .button {
     width: 80px;
     font-size: 10px;
     margin: 10px;
-  }
-  body main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  body main .vision, body main .mission, body main .history {
-    margin: 0;
-    margin-left: 50px;
   }
 }
 /* for smaller tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   body {
-    width: 120%;
+    width: 100%;
   }
   body .button {
     width: 80px;
-    font-size: 10px;
     margin: 10px;
-  }
-  body main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  body main .vision, body main .mission, body main .history {
-    margin: 0;
-    margin-left: 60px;
   }
 }
 /* for large tablets */
 @media only screen and (min-width: 769px) and (max-width: 990px) {
   body {
-    width: 100vw;
+    width: 100%;
   }
   body .button {
     width: 80px;
     margin: 15px;
-  }
-  body main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  body main .vision, body main .mission, body main .history {
-    margin: 0;
-    margin-left: 50px;
   }
 }
 /* for laptops */
@@ -188,17 +221,7 @@ body .footer {
   }
   body .button {
     width: 80px;
-    font-size: 10px;
-    margin: 10px;
-  }
-  body main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  body main .vision, body main .mission, body main .history {
-    margin: 0;
-    margin-left: 85px;
+    margin: 20px;
   }
 }
 /* for desktops */
@@ -208,9 +231,8 @@ body .footer {
   }
   body .button {
     width: 80px;
-    font-size: 10px;
-    margin: 20px;
+    margin: 10px;
   }
 }
 
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=contact.css.map */

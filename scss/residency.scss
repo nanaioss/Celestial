@@ -248,6 +248,135 @@ body {
         background-color: rgba(156, 225, 247, 0.712);
         text-align: center;
         padding: 0.5%;
-    
+        
+    }
+}
+
+@media only screen 
+  and (max-width: 480px) { 
+    body {
+        width: 100%;
+
+        .button {
+            width: 80px;
+            font-size: 10px;
+            margin: 10px;
+        }
+
+        main {
+             display: flex;
+             flex-direction: column;
+          .container {
+            width: 150px;
+            height: 150px;
+            
+          }
+        }
+
+        footer {
+            margin-top: 0px;
+        }
+    }
+} 
+
+/* for smaller tablets */
+@media only screen 
+  and (min-width: 481px) 
+  and (max-width: 768px) { 
+    body {
+      width: 100%;
+
+      .button {
+          width: 80px;
+          font-size: 10px;
+          margin: 10px;
+      }
+
+      main {
+           display: flex;
+           flex-direction: column;
+        .container {
+          width: 150px;
+          height: 150px;
+          
+        }
+      }
+
+      footer {
+          margin-top: 0px;
+      }
+  }
+} 
+
+/* for large tablets */
+@media only screen 
+  and (min-width: 769px) 
+  and (max-width: 990px) { 
+    body {
+      width: 100%;
+
+      .button {
+          width: 80px;
+          font-size: 10px;
+          margin: 10px;
+      }
+
+      main {
+           display: flex;
+           flex-direction: column;
+        .container {
+          width: 150px;
+          height: 150px;
+          
+        }
+      }
+
+      footer {
+          margin-top: 0px;
+      }
+  }
+} 
+
+/* for laptops */
+@media only screen 
+  and (min-width: 991px) 
+  and (max-width: 1366px) { 
+    body {
+      width: 100%;
+
+      .button {
+          width: 80px;
+          font-size: 10px;
+          margin: 10px;
+      }
+
+      main {
+           
+        .container {
+          width: 150px;
+          height: 200px;
+          
+        }
+      }
+
+      footer {
+          margin-top: 45%;
+      }
+  }
+} 
+
+/* for desktops */
+@media only screen 
+  and (min-width: 1367px) { 
+    body {
+       
+        width: 100%;
+
+        .button {
+            width: 80px;
+            margin: 10px;
+        }
+
+
     }
 }
